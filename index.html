@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <title>The palor</title>
+</head>
+<body class="font-[lato]">
+   
+
+        <nav  class="  h-[72px] gap-[0px] opacity-[0px] ">
+          <div class="flex justify-around mt-[10px]">
+            <div class="flex items-center gap-x-8 justify-between">
+
+                <a href="#" class="">Hair Salons</a>
+                <a href="#" class="">Barber Shops</a>
+                <a href="#" class="">Nails Shops</a>
+                <a href="#" class="">Tattoo Shops</a>
+                <a href="#" class="">Visitors</a>
+                <a href="#" class="">Freelancers</a>
+                <a href="#" class="">More</a>
+            </div>
+            <div class="buttons flex gap-x-4 ">
+                <button class="w-[88px] bg-[#DCCDE7] p-3 text-[#874FB0] rounded">Login</button>
+                <button class="w-[109px] border border-[#874FB0] p-3 text-[#874FB0] rounded">Register</button>
+                <button class="w-[154px] text-white p-3 bg-[#874FB0] rounded">Add Your Shop</button>
+            </div>
+          </div>
+        </nav>
+        <div class=" h-[72px] px-[3rem] pt-[8px] bg-black">
+            <div class="flex justify-between items-center gap-x-10">
+                <div class="logo pt-[2px]">
+                    <img src="title.png" class="w-[150px]  text-2xl ">
+                </div>
+                <div class="list text-white flex gap-x-8 ">
+                        <a href="#" class="">Home</a>
+                        <a href="#" class="">About</a>
+                        <a href="#" class="">Services</a>
+                        <a href="#" class="">Marketplace</a>
+                        <a href="#" class="">Events</a>
+                        <a href="#" class="">Blogs</a>
+                        <a href="#" class="">Jobs</a>
+                </div>
+              </div>
+        </div>
+        <div class="h-[800px]">
+
+            <div class="flex ">
+               <div  class="bg-[url('/bg.jpeg')] bg-cover w-[50%] h-[800px]">
+               </div>
+               <div class="form w-[50%]">
+                   <div class=" ml-[90px] mt-[100px] w-[448px] h-[568px] top-[242px] left-[855px] gap-[0px] opacity-[0px] ">
+                       <div class="register flex flex-col gap-y-4">
+                           <div class="flex flex-col gap-y-1">
+                               <h1 class="font-bold text-2xl">Welcome to the Palor</h1>
+                               <h1 class="text-gray-400">Please Signup to your account</h1>
+                           </div>
+                           <div class="flex flex-col gap-y-1  text-gray-500 ">
+                               <label for="firstname "><span class="text-red-800">*</span>First Name</label>
+                               <input type="text" placeholder="John" class="outline-none border border-gray-400 p-2 rounded-md" id="firstname">
+                           </div>
+                           <div class="flex flex-col gap-y-1  text-gray-500 ">
+                               <label for="firstname "><span class="text-red-800">*</span>Last Name</label>
+                               <input type="text" placeholder="Doe" class="outline-none border border-gray-400 p-2 rounded-md" id="lastname">
+                           </div>
+                           <div class="flex flex-col gap-y-1  text-gray-500 ">
+                               <label for="firstname "><span class="text-red-800">*</span>Username</label>
+                               <input type="text" placeholder="johndoe122" class="outline-none border border-gray-400 p-2 rounded-md no-underline" id="username">
+                               <p id="errorUsername" class="text-red-700"></p>
+                           </div>
+                           <div class="flex flex-col gap-y-1  text-gray-500 ">
+                               <label for="firstname "><span class="text-red-800">*</span>Email</label>
+                               <input type="email" placeholder="johndoe@gmail.com" class="outline-none border border-gray-400 p-2 rounded-md" id="email">
+                               <p id="errorEmail" class="text-red-700"></p>
+                           </div>
+                           <div class="flex flex-col gap-y-1  text-gray-500 ">
+                               <label for="firstname "><span class="text-red-800">*</span>Password</label>
+                               <div class="flex outline-none border border-gray-400 p-2 rounded-md justify-between items-center">
+                                   <input type="password" placeholder="******" class="outline-none" id="password">
+                                   <ion-icon name="eye-off-outline" id="icon" class="cursor-pointer" onclick="showpass()"></ion-icon>
+                               </div>
+                               <p id="errorpassword" class="text-red-700"></p>
+                            </div>
+                            <div class="flex flex-col gap-y-2 justify-center items-center">
+                               <p id="error" class="text-red-700"></p>
+                              <button class="bg-[#874FB0] text-white w-full p-2 rounded-md " onclick="validateSignup()">Signup</button>
+                               <a href="#" class="text-gray-500">Already have an account ? <span class="text-[#874FB0]">Login Now</span> </a>
+                           </div>
+                       </div>
+                   </div>
+               </div>
+            </div>
+        </div>
+         <footer>
+
+            <div class="h-[427px] bg-[#332F3C]  ">
+                <div class="mx-[30px] h-[358px]  flex  justify-between pl-[3rem] pt-[6rem] px-[4rem]">
+                       <div class="flex flex-col gap-y-4">
+                        <img src="lo.png" class="w-[120px] h-[120px]">
+                        <div class="flex justify-center items-center text-white text-sm gap-x-3">
+                            <p class="font-bold"><ion-icon name="mail-outline"></ion-icon></p>
+                            <h1 class="text-sm mb-[2px] text-gray-300">ash.shuk1@yahoo.com</h1>
+                        </div>
+                        <div class="flex gap-3 text-white">
+                            <p><ion-icon name="logo-instagram"></ion-icon></p>
+                            <p><ion-icon name="logo-dribbble"></ion-icon></p>
+                            <p><ion-icon name="logo-twitter"></ion-icon></p>
+                            <p><ion-icon name="logo-youtube"></ion-icon></p>
+                        </div>
+                       </div>  
+                       <div class="flex flex-col gap-2 text-white">
+                        <h1 class="font-bold mb-3">Quick Links</h1>
+                        <a href="#" class="text-sm text-gray-300">Home</a>
+                        <a href="#" class="text-sm text-gray-300">About</a>
+                        <a href="#" class="text-sm text-gray-300">Privacy Policy</a>
+                        <a href="#" class="text-sm text-gray-300">Term & Condition</a>
+                        <a href="#" class="text-sm text-gray-300">Contact us</a>
+                        <a href="#" class="text-sm text-gray-300">Help</a>
+                        
+                       </div>
+                       <div class="flex flex-col gap-2 text-white">
+                        <h1 class="font-bold mb-3">Top Cities</h1>
+                        <a href="#" class="text-sm text-gray-300">New York</a>
+                        <a href="#" class="text-sm text-gray-300">Toronto</a>
+                        <a href="#" class="text-sm text-gray-300">Brampton</a>
+                        <a href="#" class="text-sm text-gray-300">Los Angeles</a>
+                        <a href="#" class="text-sm text-gray-300">View all Cities</a>
+                       
+                        
+                       </div>
+                       <div class="flex flex-col gap-2 text-white">
+                        <h1 class="font-bold mb-3">Top Shops</h1>
+                        <a href="#" class="text-sm text-gray-300">Emily Hair Salon</a>
+                        <a href="#" class="text-sm text-gray-300">The Link Tattoo Artist</a>
+                        <a href="#" class="text-sm text-gray-300">Heaven Nail Art World</a>
+                        <a href="#" class="text-sm text-gray-300">View All Top Shops</a>
+                        
+                       </div>
+                       <div class="flex flex-col gap-2 text-white">
+                        <h1 class="font-bold mb-3">Upcoming Events</h1>
+                        <a href="#" class="text-sm text-gray-300">The Nail Art Event</a>
+                        <a href="#" class="text-sm text-gray-300">Free Tattoo Event by the Link</a>
+                        <a href="#" class="text-sm text-gray-300">The Nail Art Event</a>
+                        <a href="#" class="text-sm text-gray-300">Free Tattoo Event by the Link</a>
+                        <a href="#" class="text-sm text-gray-300">View All Top Events</a>                        
+                       </div>
+                </div>
+                <hr class="">
+                <div class="text-gray-300 text-sm flex justify-center items-center py-[1.2rem]">© 2021 The Parlor. All rights reserved</div>
+            </div>
+        </footer>
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+        <script>
+            let error=document.getElementById('error')
+            let errorEmail=document.getElementById('errorEmail')
+            let errorUsername=document.getElementById('errorUsername')
+            let errorpassword=document.getElementById('errorpassword')
+            function validateSignup(){
+                let firstname=document.getElementById('firstname').value
+                let lastname=document.getElementById('lastname').value
+                let username=document.getElementById('username').value
+                let email=document.getElementById('email').value
+                let password=document.getElementById("password").value
+                if(firstname.trim()===''|| lastname.trim()==='' || username.trim()==='' || email.trim()===''|| password.trim()===''){
+                    error.textContent='All fields are requried !'
+                    errorEmail.textContent=''
+                    errorpassword.textContent=''
+                    errorUsername.textContent=''
+
+                }else if(!isvalidEmail(email)){
+                    error.textContent=''
+                    errorEmail.textContent='Invalid Email !'
+                    errorpassword.textContent=''
+                    errorUsername.textContent=''
+                }else if(password.length<8){
+                    errorEmail.textContent=''
+                    error.textContent=''
+                    errorUsername.textContent=''
+                    errorpassword.textContent='Password must be contains at least 8 characters !'
+                }else{
+                        error.textContent=''
+                        errorEmail.textContent=''
+                        errorpassword.textContent=''
+                        errorUsername.textContent=''
+                        let user_data={
+                        "firstname" :firstname,
+                        "lastname" :lastname,
+                        "username" :username,
+                        "email" :email,
+                        "password" :password
+                    }
+                    console.log(user_data)
+                    if(localStorage.getItem("users")){
+                        let users=localStorage.getItem("users")
+                        users=JSON.parse(users)
+                        const find=users.filter((el)=>{
+                            if(el.email===email){
+                                return true
+                            }
+                        })
+                        const userid= users.filter((el)=>{
+                            if(el.username===username){
+                                return true
+                            }
+                        })
+                        if(find?.length){
+                            error.textContent="User already exists !"
+                        }else if(userid?.length){
+                            errorUsername.textContent='User Name exists !'
+                        }else{
+                            users.push(user_data)
+                            localStorage.setItem("users",JSON.stringify(users))
+                            error.textContent=''
+                            
+
+                        }
+                    }else{
+                        let newuser=[user_data]
+                        localStorage.setItem("users",JSON.stringify(newuser))
+                        error.textContent=''
+                        
+                    }
+
+                }
+            }
+
+
+            function showpass(){
+                    var x = document.getElementById("password");
+                    if (x.type === "password") {
+                        x.type = "text";
+                        document.getElementById('icon').name='eye-outline'
+
+                    } else {
+                        x.type = "password";
+                        document.getElementById("icon").name='eye-off-outline'
+                    }
+                  
+            }
+
+            function isvalidEmail(email){
+            let regex = new RegExp(/\S+@\S+\.\S+/);
+            return regex.test(email)
+
+        }
+        </script>
+
+    </body>
+</html>
